@@ -11,16 +11,6 @@ class MidnightCommander < Formula
     regex(/href=.*?mc[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
-  bottle do
-    sha256 arm64_ventura:  "6c9997cc0e3abe409b02fc2f5b834e5c805d4c01bace1b1e8930dbf5bda9974d"
-    sha256 arm64_monterey: "e87079b81d73cb205be44d7b37761d004dae2edb14d62fe3791e34a2ac27fd38"
-    sha256 arm64_big_sur:  "b63985ce7b866b053613f2847d2b68f3145d8807d6e9ca49bb08757676f4c627"
-    sha256 ventura:        "83f00b049d08761da7b730ab73cf05acfbb03c2982b17abdbd59d810c3a6aab5"
-    sha256 monterey:       "5f996907eea175493f1a42d8bf88e6eb3f0ef3d2d456b1c3480b2a8092adc8e2"
-    sha256 big_sur:        "a9fa1931be3b67b41358cb328304781010fd8d5984c5337a13749aafe8b1f2f0"
-    sha256 x86_64_linux:   "f901b34e155fff6a4cb2acc7e011ec2ad88d03d3129b8db7815db432eb0a8b0a"
-  end
-
   head do
     url "https://github.com/MidnightCommander/mc.git", branch: "master"
 
